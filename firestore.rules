@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default Deny All
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // User profiles
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    // Financial Transactions (synchronized across all warehouse devices)
+    match /transactions/{transactionId} {
+      allow read, write: if true;
+    }
+
+    // Custom Categories
+    match /categories/{categoryId} {
+      allow read, write: if true;
+    }
+
+    // Monthly Bills & Reminders
+    match /bills/{billId} {
+      allow read, write: if true;
+    }
+
+    // Ayam Anugerah Warehouse Receipts
+    match /receipts/{receiptId} {
+      allow read, write: if true;
+    }
+  }
+}

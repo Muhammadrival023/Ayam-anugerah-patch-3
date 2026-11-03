@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Ayam Anugerah - Tagihan, Arus Kas \u0026 Analisa AI",
+  "description": "Aplikasi tagihan dan pembayaran serta arus kas Ayam Anugerah dengan table input Excel interaktif, pembaca \u0026 penganalisa AI Gemini, cetak surat jalan/struk fisik, dan pengingat tempo WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
